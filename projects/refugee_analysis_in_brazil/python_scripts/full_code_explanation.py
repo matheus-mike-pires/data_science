@@ -3,8 +3,8 @@
 A) INSTRUCTIONS:
 This first comment will adress the general instructions of this code and of the research. We will adress the functionalities of migration_scanner.py [COMMENTS] and describe the method of analisys [METHOD USED: QUANTITATIVE ANALISYS]
 Here are some important links:
-    - this repository:
-    - Read.me: in the above repository
+    - this repository: https://github.com/matheus-mike-pires/data_science/tree/main/projects/refugee_analysis_in_brazil
+    - Read.me: in the repository
     - References, databases, articles, sources: in the read.me
 
 
@@ -21,7 +21,7 @@ B) The larger relative increase in venezuelan refugees compared to the global in
 VENEZUELA_before/Venezuela_after = venezuelan ratio
 venezuelan ratio/global_increase_ratio = result                                                                            !!! if result == 1 or <1: 2018 policy is not effective
 
-More on the read.me file'''
+More on the readme.md file'''
 
 
 
