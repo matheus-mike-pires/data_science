@@ -47,12 +47,12 @@ group3venez = pd.concat([v2019,v2020,v2021,v2022,v2023])
 global_pre_law_entrance = len(group1global)/4
 global_critical_years = len(group2global)/2
 global_aftermath = len(group3global)/5
-avg_of_last_y = len(group2global) + len(group3global) / 7
+avg_of_last_y = (len(group2global) + len(group3global)) / 7
 
 venez_pre_law_entrance = len(group1venez)/4
 venez_critical_years = len(group2venez)/2
 venez_aftermath = len(group3venez)/5
-avg_of_venez_last_y = len(group2venez) + len(group3venez) / 7
+avg_of_venez_last_y = (len(group2venez) + len(group3venez)) / 7
 
 
 print('efficency of the law: are refugees entering in Brazil more frequently after the law than before the law?')
@@ -92,14 +92,17 @@ print('how prevalent were Venezuelans refugees before missao acolhida?')
 
 relative_number_of_venez_pre_law = round((venez_pre_law_entrance/global_pre_law_entrance) * 100, 2)
 print(f'From 2013 to 2016, Venezuelans represented, on avg, {relative_number_of_venez_pre_law}% of the total refugees')
+print()
 
 print('how prevalent were Venezuelans refugees during the start of missao acolhida and the implemention of the law?')
 relative_number_of_venez_during_law = round((venez_critical_years/global_critical_years) * 100, 2)
 print(f'From 2017 to 2018, Venezuelans represented, on avg, {relative_number_of_venez_during_law}% of the total refugees')
+print()
 
 print('how prevalent were Venezuelans refugees after the starting years of missao acolhida and the implemention of the law?')
 relative_number_of_venez_in_aftermath = round((venez_aftermath/global_aftermath) * 100, 2)
 print(f'From 2019 to 2023, Venezuelans represented, on avg, {relative_number_of_venez_in_aftermath}% of the total refugees')
+print()
 
 print('how prevalent were Venezuelans refugees between the starting years of missao acolhida and the implemention of the law and 2023?')
 relative_number_of_venez_in_total = round((avg_of_venez_last_y/avg_of_last_y) * 100, 2)
