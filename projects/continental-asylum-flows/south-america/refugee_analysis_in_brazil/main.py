@@ -215,13 +215,12 @@ def filters_to_data(df1):
 def main(df1):
 
     print()
-    valid_options = ['1', '2', '3', '4', '5', '6']
+    valid_options = ['1', '2', '3', '4', '5']
     print('1. Verify the full database of refuge requests')
     print('2. Filter the database')
-    print('3. Verify the statistcs')
-    print('4. Request contact')
-    print('5. How to use')
-    print('6. Exit')
+    print('3. Request contact')
+    print('4. How to use')
+    print('5. Exit')
     print()
     choice = input('select an option: ')
     while choice not in valid_options:
@@ -233,21 +232,19 @@ def main(df1):
     if choice == '2':
         filters_to_data(df1)
     if choice == '3':
-        statistical_analysis()
-    if choice == '4':
         print()
         print('if you need help or have any suggestions, feel free to contact me:')
         print('matheusolv.pires@gmail.com')
         print()
         main(df1)
-    if choice == '5':
-        print('Acess the following repository: XXXXXXXXXXXXXXXXXX')
+    if choice == '4':
+        print('Acess the following repository: https://github.com/matheus-mike-pires/data_science/edit/main/projects/continental-asylum-flows/south-america/refugee_analysis_in_brazil/')
         print('click on the README.md file')
         print('Follow the instructions displayed')
         print()
         print()
         main(df1)
-    if choice == '6':
+    if choice == '5':
         print()
         print('Thank you for using this program')
         
